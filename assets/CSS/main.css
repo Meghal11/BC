@@ -1,0 +1,409 @@
+body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg {
+    background: black;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg1 {
+    background-image: url('../images/2560x1600-Dunedin-New-Zealand.jpg');
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg2 {
+    background-image: url('../images/6936394-venice-gondolas.jpg');
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg3 {
+    background-image: url('../images/City_Florence_Renaissance_Italy_Tuscany_1680x1050.jpg');
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg4 {
+    background-image: url('../images/citypic.jpg');
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#header {
+    display: flex;
+    padding-top: 1vw;
+}
+
+#livecal {
+    flex: 1;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#livecal h3 {
+    font-family: 'Homemade Apple', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    background: rgba(245, 222, 179, 0.7);
+    animation: anim 10s infinite linear;
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    26% {
+        transform: scale(1.05, 1.05);
+    }
+
+    51% {
+        transform: scale(1.1, 1.1);
+    }
+
+    75% {
+        transform: scale(1.05, 1.05);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+#date::after {
+    content: "-";
+    position: absolute;
+    left: 101%;
+    top: 0px;
+    width: 10%;
+    color: black;
+    font-family: fantasy;
+}
+
+#month::after {
+    content: "-";
+    position: absolute;
+    left: 101%;
+    top: 0px;
+    width: 10%;
+    color: black;
+    font-family: fantasy;
+}
+
+#hour::after {
+    content: ":";
+    position: absolute;
+    left: 101%;
+    font-size: 20px;
+    top: 0px;
+    width: 10%;
+    color: black;
+    font-family: fantasy;
+}
+
+#minute::after {
+    content: ":";
+    position: absolute;
+    font-size: 20px;
+    left: 101%;
+    top: 0px;
+    width: 10%;
+    color: black;
+    font-family: fantasy;
+}
+
+.calc1 {
+    display: flex;
+}
+
+.calc11 {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    margin: 5px 10px;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.calc2 {
+    background: rgba(0, 0, 0, 0.8);
+    margin: 5px 10px;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    font-family: 'Averia Serif Libre', cursive;
+    word-spacing: 10px;
+}
+
+.calc {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.calc label {
+    font-size: 15px;
+}
+
+#main {
+    display: flex;
+    margin: 3% 1vw 0;
+}
+
+.calc:hover {
+    transform: scale(1.05, 1.05);
+    transition: 3s;
+}
+
+.calc h4 {
+    font-weight: 200;
+}
+
+.calc span {
+    display: block;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.ib {
+    display: inline-block;
+    width: 45%;
+}
+
+.calc button {
+    color: black;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer a:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+@media(max-width:1200px) {
+    .calc {
+        margin: 10px;
+    }
+
+    .calc h4 {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .calc label {
+        font-size: 14px;
+    }
+
+    .ib {
+        width: 55%;
+    }
+
+    #date::after {
+        left: 103%;
+        top: 2px;
+    }
+
+    #month::after {
+        left: 103%;
+        top: 2px;
+    }
+
+    #hour::after {
+        left: 103%;
+        top: 2px;
+    }
+
+    #minute::after {
+        left: 103%;
+        top: 2px;
+    }
+
+    .calc span {
+        margin-top: 4%;
+        font-size: 16px;
+    }
+
+    .calc2 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:992px) {
+    #livecal {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .calc2{
+        padding: 8px;
+    }
+
+    #main {
+        display: block;
+        text-align: center;
+        margin: 5% 15% 7%;
+    }
+
+    #footer {
+        position: relative;
+    }
+
+    #footer p{
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+@media(max-width:768px){
+    #livecal {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #main {
+        margin: 6% 10% 7%;
+    }
+}
+
+@media(max-width:640px){
+    #livecal {
+        margin-left: 19%;
+        margin-right: 19%;
+    }
+
+    #livecal h3{
+        font-size: 25px;
+    }
+
+    #date::after {
+        left: 105%;
+        top: 2px;
+    }
+
+    #month::after {
+        left: 105%;
+        top: 2px;
+    }
+
+    #hour::after {
+        left: 105%;
+        top: 2px;
+    }
+
+    #minute::after {
+        left: 105%;
+        top: 2px;
+    }
+}
+
+@media(max-width: 480px){
+    #livecal{
+        margin:0;
+    }
+
+    #main{
+        margin: 6% 5% 6%;
+    }
+
+    .calc11{
+        font-size: 17px;
+        padding: 7px;
+    }
+    #footer{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 360px){
+    .calc11{
+        font-size: 14px;
+        padding: 7px;
+        margin:5px;
+    }
+    #date::after {
+        left: 100%;
+        top: 5px;
+    }
+
+    #month::after {
+        left: 100%;
+        top: 5px;
+    }
+
+    #hour::after {
+        left: 100%;
+        top: 2px;
+    }
+
+    #minute::after {
+        left: 100%;
+        top: 2px;
+    }
+
+    .calc{
+        margin: 0 0 10px;
+        padding: 10px;    
+    }
+
+    #footer{
+        font-size:8px;
+    }
+}

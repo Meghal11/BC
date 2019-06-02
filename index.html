@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Calculator</title>
+    <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/main.css">
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <div id="container" class="bg">
+        <div id="header">
+            <div id="livecal">
+                <h3>Blessed Cloud Zone</h3>
+                <div class="calc1">
+                    <span id="date" class="calc11"></span>
+                    <span id="month" class="calc11"></span>
+                    <span id="year" class="calc11"></span>
+                </div>
+                <div class="calc2">
+                    <span id="weekday"></span>
+                </div>
+                <div class="calc1">
+                    <span id="hour" class="calc11"></span>
+                    <span id="minute" class="calc11"></span>
+                    <span id="second" class="calc11"></span>
+                </div>
+            </div>
+        </div>
+        <div id="main" class="calc12">
+            <div id="box1" class="calc">
+                <h4>Intellectual Year Month Week Day.</h4>
+                <label>Enter the no. of days:</label><br>
+                <input type="text" name="nod" id="nod" required>
+                <br><br>
+                <button id="calc1">Calculate</button>
+                <button id="reset1">Reset</button>
+                <span id="result1"></span>
+            </div>
+            <div id="box2" class="calc">
+                <h4>Walker Day Calculator.</h4>
+                <label>Enter the date:</label><br>
+                <input type="text" id="getdate" placeholder="dd / mm / yyyy" name="getdate" required>
+                <br><br>
+                <button id="calc2">Find</button>
+                <button id="reset2">Reset</button>
+                <span id="result2"></span>
+            </div>
+            <div id="box3" class="calc">
+                <h4>Index Age Calculator.</h4>
+                <div class="ib">
+                    <label>Enter your DOB:</label><br>
+                    <input type="date" id="getdate1" name="getdate1" required>
+                </div>
+                <div class="ib">
+                    <label>Enter the next date:</label><br>
+                    <input type="date" id="getdate2" name="getdate2" required>
+                </div>
+                <br><br>
+                <button id="calc3">Calculate</button>
+                <button id="reset3">Reset</button>
+                <span id="result3"></span>
+            </div>
+        </div>
+        <div id="footer">
+            <p>© 2019. All Rights Reserved | Developed by <a href="https://github.com/ashishkohli9086">Ashish Kohli</a>
+                and <a href="https://github.com/meghal11">Meghal Singhal</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
